@@ -1,4 +1,4 @@
-<ul class="nav nav-pills nav-fill" ngbNav [(activeId)]="activeId">
+<ul class="nav nav-pills nav-fill" ngbNav [(activeId)]="activeId" >
     <li class="nav-item" [ngbNavItem]="1">
         <a class="nav-link" aria-current="page" href="#" ngbNavLink>Providers
             <span class="badge text-bg-dark">4</span>
@@ -26,3 +26,10 @@
         </a>
     </li>
 </ul>
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" style="display: none;">
+    <ol class="breadcrumb pt-2 ps-2">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
