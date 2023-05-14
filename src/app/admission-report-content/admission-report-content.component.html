@@ -1,13 +1,13 @@
-<div class="d-flex flex-column bg-secondary mb-3 overflow-auto" [formGroup]="admissionForm">
-    <div class="p-3 bg-light">
+<div class="d-flex flex-column mb-3 overflow-auto" [formGroup]="admissionForm">
+    <div class="p-3">
         <label for="txtFullName" class="form-label">Full name</label>
         <input type="text" class="form-control" id="txtFullName" formControlName="fullname">
     </div>
-    <div class="p-3 bg-light">
+    <div class="p-3">
         <label for="txtGender" class="form-label">Gender</label>
         <input type="text" class="form-control" id="txtGender" formControlName="gender">
     </div>
-    <div class="p-3 bg-light">
+    <div class="p-3">
         <div class="card shadow">
             <h5 class="card-header text-center"> FEES DETAILS </h5>
             <div class="card-body">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div> 
-    <div class="p-3 bg-light" id="admissionCommentsPanel" data-bs-spy="scroll">
+    <div class="p-3" id="admissionCommentsPanel" data-bs-spy="scroll">
         <app-admission-comments></app-admission-comments>
     </div>
 </div>
