@@ -1,0 +1,21 @@
+<div class="card shadow" [formGroup]="admissionCommentsForm" >
+    <h5 class="card-header text-center"> COMMENTS </h5>
+    <div class="card-body">
+        <ng-container formArrayName="comments">
+            <table class="table table-bordered">
+                <tbody>
+                    <ng-container *ngFor="let feeForm of commentItems.controls; let i = index">
+                        <tr [formGroupName]="i">
+                            <td class="w-25">
+                                <label class="form-label"> {{ feeForm.value.commentDate }}</label>
+                            </td>
+                            <td class="w-75">
+                                <input type="text" class="form-control" formControlName="commentText"/>
+                            </td>
+                        </tr>
+                    </ng-container>
+                </tbody>
+            </table>
+        </ng-container>
+    </div>    
+</div>

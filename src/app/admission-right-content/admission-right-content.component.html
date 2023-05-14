@@ -1,0 +1,38 @@
+<div class="d-flex flex-column mb-3 h-100">
+    <div class="p-2">
+        <div class="mb-3">
+            <label for="printDate" class="form-label">Print Date</label>
+            <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker" />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div class="p-2">
+        <div class="mb-3">
+            <label for="joiningDate" class="form-label">Joining Date</label>
+            <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #joiningDate="ngbDatepicker" />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="joiningDate.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div class="p-2">
+        <div class="mb-3">
+            <label for="previousReleavingDate" class="form-label">Releaving Date</label>
+            <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #previousReleavingDate="ngbDatepicker" />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="previousReleavingDate.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div class="p-2">
+        <div class="mb-3">
+            <label for="returnedDate" class="form-label">Reviewed Date</label>
+            <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #returnedDate="ngbDatepicker" />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="returnedDate.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+</div>

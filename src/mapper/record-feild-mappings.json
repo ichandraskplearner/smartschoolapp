@@ -1,0 +1,21 @@
+{
+    "components" : [
+        { "componentId": 1, "componentCode": "serviceTypeRequested", "componentTitle": "1. SetviceType Requested" }
+    ],
+
+    "rcmappings" : [
+        {
+            "componentId": 1,
+            "mappings": [
+                { "feildName": "scene", "controlName": "Scene"},
+                { "feildName": "unscheduled", "controlName": "UnScheduled"},
+                { "feildName": "notApplicable", "controlName": "Not Applicable"},
+                { "feildName": "standby", "controlName": "Stand By"},
+                { "feildName": "rendezvous", "controlName": "Rendezvous"},                
+                { "feildName": "unknown", "controlName": "Unknown"},
+                { "feildName": "scheduled", "controlName": "Scheduled"}
+                
+            ]
+        }
+    ]
+}

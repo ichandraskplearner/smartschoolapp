@@ -1,0 +1,83 @@
+{
+    "RECORD_DATA": {
+        "$id": "1",
+        "recordId": "000020143",
+        "providerId": "4206",
+        "submissionYear": 2014,
+        "submissionQuarter": 3,
+        "printedDate": null,
+        "reviewedDate": null,
+        "faxedDate": null,
+        "returnedDate": null,
+        "createdBy": "DOHUSERS\\HydeSL",
+        "createdDate": "2014-10-27T15:52:26.137",
+        "lastUpdatedBy": null,
+        "lastUpdatedDate": null,
+        "ageCategory": null,
+        "cardiacRosc": null,
+        "causeOfInjury": null,
+        "criticalTreatment": null,
+        "incidentCounties": {
+            "$id": "2",
+            "$values": []
+        },
+        "incidentPatientDisposition": null,
+        "injurySiteType": null,
+        "profileInformation": null,
+        "provider": {
+            "$id": "3",
+            "providerId": "4206",
+            "providerName": "Leopard Medical Transport, Inc",
+            "providerType": "BLS/T",
+            "firstName": "Tracy",
+            "lastName": "Lefevre",
+            "middleName": "",
+            "address": "4411 NE 3rd Street",
+            "city": "Ocala",
+            "state": "FL",
+            "zip": "34478",
+            "county": "Marion",
+            "phone": "3527326484x",
+            "fax": "x",
+            "email": "tracylefevre@leopardtransport.com",
+            "activePrehospital": false,
+            "activeTransition": false,
+            "activeEmstars": true,
+            "active": true,
+            "updatedBy": "DOHUSERS\\HydeSL",
+            "updatedDate": "2021-04-06T19:48:19.337",
+            "emstarsTransitionAggregates": {
+                "$id": "4",
+                "$values": []
+            },
+            "records": {
+                "$id": "5",
+                "$values": [
+                    {
+                        "$ref": "1"
+                    }
+                ]
+            }
+        },
+        "providerImpression": null,
+        "recordComments": {
+            "$id": "6",
+            "$values": []
+        },
+        "serviceTypeRequested": {
+            "$id": "7",
+            "recordId": "000020143",
+            "scene": 0,
+            "unscheduled": 369,
+            "scheduled": 97,
+            "standby": 0,
+            "rendezvous": 0,
+            "notApplicable": 0,
+            "unknown": 0,
+            "record": {
+                "$ref": "1"
+            }
+        },
+        "transportMode": null
+    }
+}

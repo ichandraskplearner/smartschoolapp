@@ -1,0 +1,17 @@
+<div class="d-flex flex-row mb-3">
+    <div style="width: 85% !important;">
+        <app-admission-report-content [admissionDetails]="admissionDetails"></app-admission-report-content>
+    </div>
+    <div class="p-1 bg-info"><app-admission-right-content></app-admission-right-content></div>    
+</div>
+<div class="fixed-bottom bg-black">
+    <div class="p-2 float-start">
+        <a type="button" class="btn btn-primary" href="#admissionCommentsPanel"> COMMENTS </a>
+    </div>
+    <div class="p-2 float-end">
+        <button type="button" (click)="commit()" value="Cancel" class="btn btn-primary"> CANCEL </button>
+    </div>
+    <div class="p-2 float-end">
+        <button type="button" (click)="commit()" value="Save" class="btn btn-primary"> SAVE </button>
+    </div>
+</div>

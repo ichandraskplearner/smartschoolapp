@@ -1,0 +1,39 @@
+<div class="d-flex flex-column bg-secondary mb-3 overflow-auto" [formGroup]="admissionForm">
+    <div class="p-3 bg-light">
+        <label for="txtFullName" class="form-label">Full name</label>
+        <input type="text" class="form-control" id="txtFullName" formControlName="fullname">
+    </div>
+    <div class="p-3 bg-light">
+        <label for="txtGender" class="form-label">Gender</label>
+        <input type="text" class="form-control" id="txtGender" formControlName="gender">
+    </div>
+    <div class="p-3 bg-light">
+        <div class="card shadow">
+            <h5 class="card-header text-center"> FEES DETAILS </h5>
+            <div class="card-body">
+                <ng-container formArrayName="fees">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <ng-container *ngFor="let feeForm of feeItems.controls; let i = index">
+                                <tr [formGroupName]="i">
+                                    <td class="w-50">
+                                        <label class="form-label"> {{ feeForm.value.name }}</label>
+                                    </td>
+                                    <td class="w-25">
+                                        <input type="text" class="form-control" formControlName="amount" (blur)="calculateTotal()" />
+                                    </td>
+                                </tr>
+                            </ng-container>
+                        </tbody>
+                    </table>
+                </ng-container>
+            </div>
+            <div class="card-footer">
+                <h6 class="text-center"> GRAND TOTAL : {{ admissionForm.value.feetotal }}</h6>
+            </div>
+        </div>
+    </div> 
+    <div class="p-3 bg-light" id="admissionCommentsPanel" data-bs-spy="scroll">
+        <app-admission-comments></app-admission-comments>
+    </div>
+</div>
